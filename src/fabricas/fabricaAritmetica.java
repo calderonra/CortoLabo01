@@ -15,21 +15,22 @@ import aritmetico.multiplicar;
  * @author Raul Calderon
  */
 public class fabricaAritmetica extends fabricaAbs{
-
     @Override
-    aritmetico getaritmetico(String tipo) {
-        if(tipo== null){
-            return null;
+  
+        public aritmetico getaritmetico(String tipo){
+        switch(tipo){
+            case "Suma":
+                return new sumar();
+            case "Resta":
+                return new restar();
+            case "Multiplicacion":
+                return new multiplicar();
+            case "Division":
+                return new dividir();
         }
-        if(tipo.equalsIgnoreCase("suma")){
-            return new sumar();
-        }else if(tipo.equalsIgnoreCase("resta")){
-            return new restar();
-        }else if(tipo.equalsIgnoreCase("dividir")){
-            return new dividir();
-        }else if(tipo.equalsIgnoreCase("multiplicar")){
-            return new multiplicar();
+        return null;
         }
-            return null;
-    }   
+
+
+  
 }

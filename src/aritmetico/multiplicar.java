@@ -12,26 +12,11 @@ package aritmetico;
 public class multiplicar implements aritmetico{
 
     @Override
-    public float suma() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public float calcular(float a, float b) {
+        float aux;
+        aux=a*b;
+        return aux;
     }
 
-    @Override
-    public float resta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public float multiplica() {
-        float a=0,b=0,multiplicar=0;
-        multiplicar = a*b;
-        return multiplicar; 
-    }
    
-
-    @Override
-    public float divide() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }

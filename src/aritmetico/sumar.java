@@ -12,25 +12,11 @@ package aritmetico;
 public class sumar implements aritmetico {
 
     @Override
-    public float suma() {
-        float a=0,b=0, suma=0;
-        suma = a+b;
-        return suma;
+    public float calcular(float a, float b) {
+        float aux;
+        aux=a+b;
+        return aux;
     }
 
-    @Override
-    public float resta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public float multiplica() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public float divide() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

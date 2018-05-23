@@ -12,25 +12,12 @@ package aritmetico;
 public class restar implements aritmetico {
 
     @Override
-    public float suma() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public float calcular(float a, float b) {
+        float aux;
+        aux=a-b;
+        return aux;
     }
 
-    @Override
-    public float resta() {
-       float a=0,b=0,resta=0;
-       resta=a-b;
-       return resta;
-    }
-
-    @Override
-    public float multiplica() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public float divide() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }

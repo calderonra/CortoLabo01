@@ -12,25 +12,11 @@ package aritmetico;
 public class dividir implements aritmetico {
 
     @Override
-    public float suma() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public float calcular(float a, float b) {
+        float aux;
+       aux= a/b;
+       return aux;
     }
 
-    @Override
-    public float resta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
-    @Override
-    public float multiplica() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public float divide() {
-float a=0,b=0,divide=0;
-divide=a/b;
-return divide;
-    }
-    
 }

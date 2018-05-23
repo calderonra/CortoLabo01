@@ -10,9 +10,6 @@ package aritmetico;
  * @author Raul Calderon
  */
 public interface aritmetico {
-    float suma();
-    float resta();
-    float multiplica();
-    float divide();
+  float calcular(float a, float b);
     
 }
