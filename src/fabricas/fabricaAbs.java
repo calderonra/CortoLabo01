@@ -11,8 +11,8 @@ import aritmetico.aritmetico;
  *
  * @author Raul Calderon
  */
-public abstract class fabricaAbs {
-    abstract aritmetico getaritmetico(String tipo);
+public interface fabricaAbs {
+   aritmetico getaritmetico(String tipo);
     
     //
 }

@@ -14,7 +14,7 @@ import aritmetico.multiplicar;
  *
  * @author Raul Calderon
  */
-public class fabricaAritmetica extends fabricaAbs{
+public class fabricaAritmetica implements fabricaAbs{
     @Override
   
         public aritmetico getaritmetico(String tipo){
