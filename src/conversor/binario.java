@@ -12,20 +12,22 @@ package conversor;
 public class binario implements conversor {
 
     @Override
-    public int convertir(int a) {
-        int residuo,aux;
-        String binario="",binarioaux;
-        while(a >0){
-            residuo=(a%2);
-            a=a/2;            
-            binario=""+residuo;
+    public int convertir(int x) {
+        int[] binaryNum = new int[1000];
+        int i = 0;
+        int convertido=0;
+        String y = null;
+        while (x > 0) {
+            binaryNum[i] = x % 2;
+            x = x / 2;
+            i++;
         }
-        binario+=a;
-        StringBuilder builder;
-        builder= new StringBuilder(binario);
-        binarioaux=builder.reverse().toString();
-        aux=Integer.parseInt(binarioaux);
-        return aux;
+        for (int j = i - 1; j >= 0; j--) {
+            y=y+String.valueOf(binaryNum[j]);
+            y=y.replace("null","");
+        }
+        convertido=Integer.parseInt(y);
+        return convertido;
     }
 
    

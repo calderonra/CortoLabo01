@@ -15,6 +15,8 @@ public class FabricaDeFabricas {
    public static fabricaAbs getfabrica(String tipo){
        if(tipo.equalsIgnoreCase("aritmetica")){
            return new fabricaAritmetica();
+       }else if(tipo.equalsIgnoreCase("conversor")){
+           return new Fabricadeconversor();
        }
        return null;
    } 
