@@ -9,6 +9,8 @@ import aritmetico.dividir;
 import aritmetico.sumar;
 import aritmetico.restar;
 import aritmetico.multiplicar;
+import conversor.binario;
+import conversor.conversor;
 
 /**
  *
@@ -30,6 +32,14 @@ public class fabricaAritmetica implements fabricaAbs{
         }
         return null;
         }
+
+    @Override
+    public conversor getconversor(String tipo) {
+        return null;
+    }
+
+    
+
 
 
   

@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fabricas;
-
-import aritmetico.aritmetico;
-import conversor.conversor;
+package conversor;
 
 /**
  *
  * @author Raul Calderon
  */
-public interface fabricaAbs {
-   aritmetico getaritmetico(String tipo);
-   conversor getconversor(String tipo) ;
-    //
+public interface conversor {
+    int convertir (int a);
+
+    //public conversor(int num1);
 }
